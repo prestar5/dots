@@ -1,0 +1,182 @@
+{
+  "output": "DP-1",
+  "reload_style_on_change": true,
+  "layer": "top",
+
+  "modules-left": [
+    "tray",
+    "hyprland/workspaces",
+    "hyprland/window",
+  ],
+  "modules-center": [
+  ],
+  "modules-right": [
+    "custom/weather",
+    "custom/media",
+    "custom/updates",
+    "group/systemstats",
+    "pulseaudio",
+    "network",
+    "custom/notification",
+    "clock",
+  ],
+
+
+  "custom/arch": {
+    "format": "",
+    "tooltip-format": "i use arch btw",
+    "on-click": "exec .config/rofi/launchers/type-6/launcher.sh"
+  },
+  
+  "hyprland/workspaces": {
+    "format": "",
+    "format-icons": {
+		  "special": ""
+	  },
+    "tooltip": false,
+    "all-outputs": true,
+    "show-special": true,
+    "ignore-workspaces": ["special:scratch_.*"],
+  },
+
+  "hyprland/window": {
+      "format": "{}",
+      "separate-outputs": false,
+      "icon": true,
+      "icon-size": 14,
+      "max-length": 50
+  },
+
+  "clock": {
+    "format": "<span color='#b4befe'>󰃭 </span>{:%B %d, %Y, %R}",
+    "tooltip": false,
+    "on-click": "pkill calcurse || exec foot --app-id calcurse -e calcurse"
+  },
+
+  "backlight": {
+    "device": "intel_backlight",
+    "tooltip": false,
+    "format": "<span color='#b4befe'>{icon}</span> {percent}%",
+    "format-icons": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+
+  "pulseaudio": {
+    "format": "<span color='#b4befe'>{icon}</span>",
+    "format-muted": "<span color='#f38ba8'>󰝟</span>",
+    "tooltip-format": "Volume: {volume}%",
+    "format-icons": {
+      "headphone": "",
+      "default": [
+        "󰕿",
+        "󰖀",
+        "󰕾"
+      ]
+    },
+
+    "scroll-step": 1,
+    "on-click": "pkill pavucontrol || exec pavucontrol",
+    "ignored-sinks": [
+      "microphone_and_desktop_audio Audio/Sink sink"
+    ]
+  },
+
+  "network": {
+    "interface": "enp6s0",
+    "format": "{ifname}",
+    "format-wifi": "<span color='#b4befe'> </span>",
+    "format-ethernet": "<span color='#b4befe'>󰈀</span>",
+    "format-disconnected": "<span color='#b4befe'>󰖪 </span>Disconnected",
+    "tooltip-format": "{ifname} via {gwaddr} 󰊗",
+    "tooltip-format-wifi": "{essid} ({signalStrength}%) ",
+    "tooltip-format-ethernet": "{ifname} ",
+    "tooltip-format-disconnected": "Disconnected",
+    "on-click": "sh ~/.config/rofi/scripts/rofi-wifi-menu.sh"
+  },
+
+  "battery": {
+    "format": "<span color='#b4befe'>{icon}</span> {capacity}%",
+    "format-icons": [
+      "<span color='#f38ba8'>󱊡</span>",
+      "󱊢",
+      "󱊣"
+    ],
+    "format-charging": "<span color='#b4befe'>󰂄</span> {capacity}%",
+    "tooltip-format": "Usage time: {time}",
+    "tooltip-format-charging": "Time until full: {time}"
+  },
+
+  "tray": {
+    "icon-size": 14,
+    "spacing": 2
+  },
+
+  "cpu": {
+    "interval": 2,
+    "format": "<span color='#b4befe'></span> {usage}%",
+    "on-click": "pkill btop || exec foot -e btop"
+  },
+
+  "memory": {
+    "interval": 2,
+    "format": "<span color='#b4befe'> </span>{percentage}%",
+    "on-click": "pkill btop || exec foot -e btop"
+  },
+
+  "group/systemstats": {
+    "orientation": "horizontal",
+    "modules": [
+      "cpu",
+      "memory"
+    ]
+  },
+
+  "custom/powermenu": {
+    "format": "<span color='#f38ba8'>⏻</span>",
+    "on-click": "exec .config/rofi/powermenu/type-5/powermenu.sh"
+  },
+
+  "custom/notification": {
+    "format": "{} ",
+    "exec": "~/.config/waybar/scripts/dunst.sh",
+    "on-click": "dunstctl set-paused toggle",
+    "restart-interval": 1,
+    "tooltip": false
+  },
+
+  "custom/updates": {
+    "format": "<span color='#b4befe'>󰚰</span>{}",
+    "interval": 3600,
+    "exec": "~/.config/waybar/scripts/updatecheck.sh",
+    "return-type": "json",
+    "exec-if": "exit 0",
+    "signal": 8,
+    "on-click": "exec foot -e paru"
+  },
+
+    "custom/media": {
+        "format": "{0}",
+        "exec": "bash ~/.config/waybar/scripts/media.sh",
+        "interval": 1,
+        "return-type": "json",
+	"max-length": 20
+    },
+
+"custom/weather": {
+    "format": "{}°",
+    "tooltip": true,
+    "interval": 3600,
+    "exec": "wttrbar --location Belfast",
+    "on-click": "foot --app-id weather -e bash -c 'curl wttr.in/Belfast; read -n 1'",
+    "return-type": "json"
+},
+}
