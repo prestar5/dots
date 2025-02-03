@@ -1,0 +1,27 @@
+[pyprland]
+plugins = [
+  "scratchpads",
+]
+
+[scratchpads.mus]
+animation = "fromBottom"
+command = "foot --app-id \"music\" sh -c ~/.scripts/mus.sh"
+class = "music"
+lazy = true
+size = "70% 40%"
+
+[scratchpads.vol]
+pinned = false
+animation = "fromLeft"
+command = "foot --app-id pulsemixer pulsemixer"
+class = "pulsemixer"
+size = "30% 80%"
+unfocus = "hide"
+
+[scratchpads.fm]
+pinned = false
+animation = "fromBottom"
+command = "nemo"
+class = "nemo"
+position = "15% 15%"
+size = "70% 70%"
