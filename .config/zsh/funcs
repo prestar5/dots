@@ -1,0 +1,29 @@
+# yt-dlp download functions
+# video
+viddl() {
+    local url="$1"
+    local output_dir="$HOME/Videos/Download"
+    mkdir -p "$output_dir"
+    yt-dlp -S ext:mp4:m4a -o "$output_dir/%(title)s.%(ext)s" "$url" && \
+    notify-send -i download "yt-dlp" "Video has been downloaded to $output_dir."
+}
+
+# audio
+auddl() {
+    local url="$1"
+    local output_dir="$HOME/Music/Downloaded"
+    mkdir -p "$output_dir"
+    yt-dlp -x --audio-format mp3 --embed-thumbnail --convert-thumbnails jpg --embed-metadata -o "$output_dir/%(title)s.%(ext)s" "$url" && \
+    notify-send -i download "yt-dlp" "Audio has been downloaded to $output_dir."
+}
+
+# maps
+mapdl() {
+  local mapname="$1"
+  local output_dir="/mnt/Games/SteamLibrary/steamapps/common/Counter-Strike Source/cstrike/maps"
+  mkdir -p "$output_dir"
+  echo -e "[mapdl] Downloading \033[1m$1\033[0m..."
+  curl -L -O http://main.fastdl.me/maps/$1.bsp.bz2 --output-dir "$output_dir"
+  bzip2 -d $output_dir/$1.bsp.bz2
+  echo -e "[mapdl] Downloaded \033[1m$1\033[0m successfully!"
+}
