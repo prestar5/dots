@@ -1,0 +1,8 @@
+    OpenRGB v0.9
+    Commit:  from 
+    Launched: 20241130_161126
+====================================================================================================
+
+0     |Info:    Found file: Default.orp attempting to validate header
+0     |Info:    Valid v4 profile found for Default
+1     |ERROR:   'Default' is not a valid directory

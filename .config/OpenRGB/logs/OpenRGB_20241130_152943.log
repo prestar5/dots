@@ -1,0 +1,38 @@
+    OpenRGB v0.9
+    Commit:  from 
+    Launched: 20241130_152943
+====================================================================================================
+
+1001  |Info:    ------------------------------------------------------
+1001  |Info:    |               Start device detection               |
+1001  |Info:    ------------------------------------------------------
+1002  |Info:    Initializing HID interfaces: Success
+1009  |Info:    ------------------------------------------------------
+1009  |Info:    |             Detecting I2C interfaces               |
+1009  |Info:    ------------------------------------------------------
+1010  |Info:    Registering I2C interface: /dev/i2c-3 Device 10DE:2504 Subsystem: 10DE:2504
+1010  |Info:    Registering I2C interface: /dev/i2c-1 Device 10DE:2504 Subsystem: 10DE:2504
+1010  |Info:    Registering I2C interface: /dev/i2c-6 Device 1022:790B Subsystem: 1043:87C0
+1012  |Info:    Registering I2C interface: /dev/i2c-2 Device 10DE:2504 Subsystem: 10DE:2504
+1012  |Info:    Registering I2C interface: /dev/i2c-7 Device 1022:790B Subsystem: 1043:87C0
+1012  |Info:    ------------------------------------------------------
+1012  |Info:    |               Detecting I2C devices                |
+1012  |Info:    ------------------------------------------------------
+1569  |Info:    ------------------------------------------------------
+1569  |Info:    |               Detecting I2C PCI devices            |
+1569  |Info:    ------------------------------------------------------
+1570  |Info:    ------------------------------------------------------
+1570  |Info:    |               Detecting HID devices                |
+1570  |Info:    ------------------------------------------------------
+2123  |Info:    [G Pro Wireless Gaming Mouse] Registering RGB controller
+2124  |Info:    [Anne Pro 2] Registering RGB controller
+2124  |Info:    ------------------------------------------------------
+2124  |Info:    |            Detecting libusb HID devices            |
+2124  |Info:    ------------------------------------------------------
+2246  |Info:    ------------------------------------------------------
+2246  |Info:    |              Detecting other devices               |
+2246  |Info:    ------------------------------------------------------
+2252  |Info:    ------------------------------------------------------
+2252  |Info:    |                Detection completed                 |
+2252  |Info:    ------------------------------------------------------
+2252  |Dialog:  <h2>WARNING:</h2><p>One or more I2C/SMBus interfaces failed to initialize.</p><p>RGB DRAM modules and some motherboards' onboard RGB lighting will not be available without I2C/SMBus.</p><p>On Linux, this is usually because the i2c-dev module is not loaded.  You must load the i2c-dev module along with the correct i2c driver for your motherboard.  This is usually i2c-piix4 for AMD systems and i2c-i801 for Intel systems.</p><p>See <a href='https://help.openrgb.org/'>help.openrgb.org</a> for additional troubleshooting steps if you keep seeing this message.<br></p>

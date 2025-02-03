@@ -1,0 +1,56 @@
+    OpenRGB v0.9
+    Commit:  from 
+    Launched: 20250201_182542
+====================================================================================================
+
+4     |Info:    Found file: Default.orp attempting to validate header
+4     |Info:    Valid v4 profile found for Default
+1018  |Info:    ------------------------------------------------------
+1018  |Info:    |               Start device detection               |
+1018  |Info:    ------------------------------------------------------
+1018  |Info:    Initializing HID interfaces: Success
+1028  |Info:    ------------------------------------------------------
+1028  |Info:    |             Detecting I2C interfaces               |
+1028  |Info:    ------------------------------------------------------
+1028  |Info:    Registering I2C interface: /dev/i2c-3 Device 10DE:2504 Subsystem: 10DE:2504
+1029  |Info:    Registering I2C interface: /dev/i2c-1 Device 10DE:2504 Subsystem: 10DE:2504
+1029  |Info:    Registering I2C interface: /dev/i2c-6 Device 1022:790B Subsystem: 1043:87C0
+1029  |Info:    Registering I2C interface: /dev/i2c-4 Device 10DE:2504 Subsystem: 10DE:2504
+1029  |Info:    Registering I2C interface: /dev/i2c-2 Device 10DE:2504 Subsystem: 10DE:2504
+1029  |Info:    Registering I2C interface: /dev/i2c-0 Device 10DE:2504 Subsystem: 10DE:2504
+1029  |Info:    Registering I2C interface: /dev/i2c-7 Device 1022:790B Subsystem: 1043:87C0
+1029  |Info:    Registering I2C interface: /dev/i2c-5 Device 1022:790B Subsystem: 1043:87C0
+1029  |Info:    ------------------------------------------------------
+1029  |Info:    |               Detecting I2C devices                |
+1029  |Info:    ------------------------------------------------------
+1437  |Info:    [Corsair Vengeance Pro RGB] Registering RGB controller
+1449  |Info:    [Corsair Vengeance Pro RGB] Registering RGB controller
+2070  |Info:    ------------------------------------------------------
+2070  |Info:    |               Detecting I2C PCI devices            |
+2070  |Info:    ------------------------------------------------------
+2071  |Info:    ------------------------------------------------------
+2071  |Info:    |               Detecting HID devices                |
+2071  |Info:    ------------------------------------------------------
+2425  |Info:    Unable add this Logitech device: Not Connected
+2779  |Info:    Unable add this Logitech device: Not Connected
+3134  |Info:    Unable add this Logitech device: Not Connected
+3488  |Info:    Unable add this Logitech device: Not Connected
+3842  |Info:    Unable add this Logitech device: Not Connected
+4196  |Info:    Unable add this Logitech device: Not Connected
+4550  |Info:    Unable add this Logitech device: Not Connected
+4904  |Info:    Unable add this Logitech device: Not Connected
+5258  |Info:    Unable add this Logitech device: Not Connected
+5612  |Info:    Unable add this Logitech device: Not Connected
+5682  |Info:    [SteelSeries Apex Pro TKL] Registering RGB controller
+5682  |Info:    ------------------------------------------------------
+5682  |Info:    |            Detecting libusb HID devices            |
+5682  |Info:    ------------------------------------------------------
+5817  |Info:    ------------------------------------------------------
+5817  |Info:    |              Detecting other devices               |
+5817  |Info:    ------------------------------------------------------
+5827  |Info:    ------------------------------------------------------
+5827  |Info:    |                Detection completed                 |
+5827  |Info:    ------------------------------------------------------
+5827  |Info:    Profile loading: Succeeded for Corsair Vengeance Pro RGB @ I2C: /dev/i2c-5, address 0x58
+5827  |Info:    Profile loading: Succeeded for Corsair Vengeance Pro RGB @ I2C: /dev/i2c-5, address 0x59
+5827  |Info:    Profile loading: FAILED! for SteelSeries Apex Pro TKL @ HID: /dev/hidraw5

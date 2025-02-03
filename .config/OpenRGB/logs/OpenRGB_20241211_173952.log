@@ -1,0 +1,49 @@
+    OpenRGB v0.9
+    Commit:  from 
+    Launched: 20241211_173952
+====================================================================================================
+
+0     |Info:    Found file: Default.orp attempting to validate header
+0     |Info:    Valid v4 profile found for Default
+1002  |Info:    ------------------------------------------------------
+1002  |Info:    |               Start device detection               |
+1002  |Info:    ------------------------------------------------------
+1002  |Info:    Initializing HID interfaces: Success
+1009  |Info:    ------------------------------------------------------
+1009  |Info:    |             Detecting I2C interfaces               |
+1009  |Info:    ------------------------------------------------------
+1009  |Info:    Registering I2C interface: /dev/i2c-3 Device 10DE:2504 Subsystem: 10DE:2504
+1009  |Info:    Registering I2C interface: /dev/i2c-1 Device 10DE:2504 Subsystem: 10DE:2504
+1009  |Info:    Registering I2C interface: /dev/i2c-6 Device 1022:790B Subsystem: 1043:87C0
+1009  |Info:    Registering I2C interface: /dev/i2c-4 Device 10DE:2504 Subsystem: 10DE:2504
+1009  |Info:    Registering I2C interface: /dev/i2c-2 Device 10DE:2504 Subsystem: 10DE:2504
+1009  |Info:    Registering I2C interface: /dev/i2c-0 Device 10DE:2504 Subsystem: 10DE:2504
+1009  |Info:    Registering I2C interface: /dev/i2c-7 Device 1022:790B Subsystem: 1043:87C0
+1009  |Info:    Registering I2C interface: /dev/i2c-5 Device 1022:790B Subsystem: 1043:87C0
+1009  |Info:    ------------------------------------------------------
+1009  |Info:    |               Detecting I2C devices                |
+1009  |Info:    ------------------------------------------------------
+1411  |Info:    [Corsair Vengeance Pro RGB] Registering RGB controller
+1423  |Info:    [Corsair Vengeance Pro RGB] Registering RGB controller
+2043  |Info:    ------------------------------------------------------
+2043  |Info:    |               Detecting I2C PCI devices            |
+2043  |Info:    ------------------------------------------------------
+2044  |Info:    ------------------------------------------------------
+2044  |Info:    |               Detecting HID devices                |
+2044  |Info:    ------------------------------------------------------
+2609  |Info:    [G Pro Wireless Gaming Mouse] Registering RGB controller
+2610  |Info:    [Anne Pro 2] Registering RGB controller
+2610  |Info:    ------------------------------------------------------
+2610  |Info:    |            Detecting libusb HID devices            |
+2610  |Info:    ------------------------------------------------------
+2731  |Info:    ------------------------------------------------------
+2731  |Info:    |              Detecting other devices               |
+2731  |Info:    ------------------------------------------------------
+2737  |Info:    ------------------------------------------------------
+2737  |Info:    |                Detection completed                 |
+2737  |Info:    ------------------------------------------------------
+2738  |Info:    Profile loading: Succeeded for Corsair Vengeance Pro RGB @ I2C: /dev/i2c-5, address 0x58
+2738  |Info:    Profile loading: Succeeded for Corsair Vengeance Pro RGB @ I2C: /dev/i2c-5, address 0x59
+2738  |Info:    Profile loading: Succeeded for G Pro Wireless Gaming Mouse @ HID: /dev/hidraw8 (Receiver) 
+Wireless Index: 255
+2738  |Info:    Profile loading: Succeeded for Anne Pro 2 @ HID: /dev/hidraw5
