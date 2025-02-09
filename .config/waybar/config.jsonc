@@ -17,6 +17,7 @@
     "group/systemstats",
     "pulseaudio",
     "network",
+    "idle_inhibitor",
     "custom/notification",
     "clock",
   ],
@@ -29,7 +30,7 @@
   },
   
   "hyprland/workspaces": {
-    "format": "",
+    "format": "{id}",
     "format-icons": {
 		  "special": ""
 	  },
@@ -179,4 +180,12 @@
     "on-click": "foot --app-id weather -e bash -c 'curl wttr.in/Belfast; read -n 1'",
     "return-type": "json"
 },
+
+  "idle_inhibitor": {
+    "format": "{icon}",
+    "format-icons": {
+        "activated": "󰈈",
+        "deactivated": "󰈉"
+    }
+}
 }

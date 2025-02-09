@@ -96,6 +96,13 @@ window#waybar {
  margin-right: 10px;
 }
 
+#idle_inhibitor {
+  background-color: #12121c;
+  color: #b4befe;
+  border-radius: 0;
+  padding-right: 10px;
+}
+
 #network {
  border-radius: 0;
 }
