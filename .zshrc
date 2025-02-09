@@ -31,16 +31,10 @@ SAVEHIST=10000000
 HISTFILE="${XDG_CACHE_HOME:-$HOME/.cache}/zsh/history"
 setopt inc_append_history
 
-# env
+# env, alias, keybinds, functions
 source ~/.env
-
-# aliases
 source ~/.config/zsh/alias
-
-# keybinds
 source ~/.config/zsh/binds
-
-# functions
 source ~/.config/zsh/funcs
 
 
