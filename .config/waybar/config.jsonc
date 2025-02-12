@@ -12,7 +12,7 @@
   ],
   "modules-right": [
     "custom/weather",
-    "custom/media",
+    "mpris",
     "custom/updates",
     "group/systemstats",
     "pulseaudio",
@@ -164,13 +164,6 @@
     "on-click": "exec foot -e paru"
   },
 
-    "custom/media": {
-        "format": "{0}",
-        "exec": "bash ~/.config/waybar/scripts/media.sh",
-        "interval": 1,
-        "return-type": "json",
-	"max-length": 20
-    },
 
 "custom/weather": {
     "format": "{}°",
@@ -179,6 +172,16 @@
     "exec": "wttrbar --location Belfast",
     "on-click": "foot --app-id weather -e bash -c 'curl wttr.in/Belfast; read -n 1'",
     "return-type": "json"
+},
+
+"mpris": {
+    "format": "{player_icon} {artist} - {title}",
+    "player-icons": {
+        "spotify_player": "<span color='#b4befe'></span>",
+        "cmus": "<span color='#b4befe'></span>"
+    },
+    "ignored-players": ["firefox"],
+  "max-length": 25
 },
 
   "idle_inhibitor": {
